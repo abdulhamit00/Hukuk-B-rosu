@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+
+body {
+  background-color: #ffff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+
+  color: rgb(0, 0, 0);
+}
+
+.all {
+  width: 100%;
+  height: 400px;
+  background-image: url(/giammarco-boscaro-zeH-ljawHtg-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #000503a2;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+}
+
+.img-field {
+  display: flex;
+  align-items: center;
+
+  img {
+    border-radius: 20px;
+    transition: 0.7s;
+    align-self: flex-start;
+    &:hover {
+      transform: scale(1.2) !important;
+    }
+  }
+}
+
+.link-field {
+  gap: 100px !important;
+  display: flex;
+  background-color: rgba(27, 27, 27, 0);
+  border-radius: 20px;
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.7s;
+    font-size: 18px;
+    display: flex;
+    gap: 80px !important;
+
+    &:hover {
+      background-color: 5px solid #04aa6d;
+      border-radius: 10px;
+      transform: scale(1.2);
+      align-self: flex-start;
+    }
+  }
+}
+
+.parag {
+  letter-spacing: 1px;
+}
+
+.nav {
+  a:hover {
+    color: #04aa6d;
+  }
+}
+
+.navbar-toggler {
+  background-color: rgb(223, 159, 40);
+}
+
+.main-img {
+  border-radius: 50% !important;
+}
+
+button.slick-arrow.slick-prev {
+  left: -60px;
+}
+
+.slick-prev {
+  color: #000 !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 50px;
+  color: black;
+}
+
+.wrap {
+  margin-top: -60px;
+}
+
+.a {
+  text-decoration: none;
+  color: white;
+}
+
+.info {
+background-color: (213 213 213 / 27%) !important;
+  letter-spacing: 1px;
+}
+
+.drop {
+  &:hover {
+    color: #04aa6d !important;
+    transform: scale(1.2);
+    transition: 0.7s;
+  }
+}
+
+/* footer scss */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1b2231;
+  padding: 20px;
+  color: white;
+  @media screen and (max-width: 768px) {
+    padding: 0;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section {
+    flex: 1;
+    padding: 10px;
+    border-right: 2px solid white;
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  }
+
+  .social-media {
+    flex: 1;
+    padding: 10px;
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 10px;
+
+      a {
+        text-decoration: none;
+        color: #333;
+        font-size: 24px;
+        color: white;
+
+        &:hover {
+          color: #007bff;
+        }
+      }
+    }
+  }
+}
+
+/* info isim alanı */
+.name {
+  font-family: "dancing script";
+  font-weight: 700 !important;
+}
+
+.navbar-nav {
+  --bs-nav-link-hover-color: #5c5959 !important;
+}
+
+.image {
+  border-radius: 50%;
+}
+
+/* contact alanı */
+
+
+.a {
+
+  color: white;
+  height: 400px;
+  border-radius: 20px;
+}
+
+
+textarea {
+  width: 550px; 
+  height: 250px; 
+  max-width: 550px; 
+  max-height: 250px; 
+  resize: none; 
+  
+
+
+}
+
+@media screen and (max-width: 768px) {
+  textarea {
+    width: 350px;
+    max-width: 350px;
+  }
+}
+
+.right{
+justify-content: center;
+ 
+}
+
+
+.img-responsive{
+  transition: .3s;
+  &:hover{
+  transform: scale(1.2);
+ 
+  }
+}
+
+
+.img-shadow{
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
